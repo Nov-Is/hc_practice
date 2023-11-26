@@ -1,0 +1,182 @@
+/* スマートフォン用 */
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+header p {
+    background-color: #384152;
+    color: #F6F8FA;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: flex;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header li {
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.main_visual {
+    margin-bottom: 100px;
+}
+
+.mv_1920x1280 {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+main, section {
+    width: 90%;
+    margin: 0 auto 100px;
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.headline h1 {
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
+
+main p {
+    margin: 10px 0;
+}
+
+.introduction {
+    line-height: 1.3em;
+    letter-spacing: 0.6px;
+}
+
+.name, .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.m_150x150 {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.title, .text {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.p_640x424 {
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    color: #B5AEA7;
+    font-size: 12px;
+    border-bottom: 5px solid #000;
+    padding-bottom: 5px;
+}
+
+/* PC用 */
+@media screen and (min-width:600px) {
+    header, main, section  {
+        max-width: 960px;
+        padding: 0 4%;
+        margin:  0 auto;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header p {
+        margin: 10px;
+        font-size: 24px;
+        padding-top: 8px;
+    }
+
+    header li {
+        margin: 20px;
+        font-size: 18px;
+    }
+    
+    .main_visual {
+        margin-bottom: 100px;
+    }
+
+    .introduction {
+        display: grid;
+        grid-template-columns: 25px 5fr 1fr 25px;
+        line-height: 1.7em;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .intro1 {
+        grid-column: 2;
+    }
+
+    .name {
+        text-align: start;
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .detail {
+        margin: 0;
+    }
+
+    .m_150x150 {
+        display: grid;
+        grid-column: 3;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .profile {
+        margin-top: 100px;
+    }
+
+    .headline {
+        margin-bottom: 50px;
+    }
+
+    .headline h1 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .content-cover {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+}
+
